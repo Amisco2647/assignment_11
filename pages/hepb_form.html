@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="form3" class="form-container" style="display: none;">
+        <h2>Hepatitis B Pregnant Women Reporting Form</h2>
+        <form>
+            
+            <label for="uniqueID" class="required">Unique Identifier</label>
+            <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+
+            
+            <label for="name" class="required">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter full name">
+
+            
+            <label for="dob" class="required">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            
+            <label for="hepatitisStatus" class="required">Hepatitis B Status</label>
+            <select id="hepatitisStatus" name="hepatitisStatus" required>
+                <option value="" disabled selected>Select status</option>
+                <option value="positive">Positive</option>
+                <option value="negative">Negative</option>
+                <option value="unknown">Unknown</option>
+            </select>
+
+            
+            <label for="pregnancyStage" class="required">Pregnancy Stage</label>
+            <select id="pregnancyStage" name="pregnancyStage" required>
+                <option value="" disabled selected>Select stage</option>
+                <option value="first-trimester">First Trimester</option>
+                <option value="second-trimester">Second Trimester</option>
+                <option value="third-trimester">Third Trimester</option>
+            </select>
+
+            
+            <label for="contact" class="required">Contact Information</label>
+            <textarea id="contact" name="contact" rows="4" required placeholder="Enter contact information"></textarea>
+
+            
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Enter any additional information"></textarea>
+
+            
+            <input type="submit" value="Report Hepatitis B Case">
+        </form>
+    </div>
+
+</body>
+</html>
