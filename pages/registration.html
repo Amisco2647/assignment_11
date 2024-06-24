@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="registration-container">
+        <section>
+            <h2>Registration Form</h2>
+            <form>
+                <fieldset>
+                    <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Optional">
+        
+                
+                <label for="uniqueID" class="required">Unique Identifier</label>
+                <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+        
+                <label for="sex" class="required">Sex</label>
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Select your sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="intersex">Intersex</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <label for="genderIdentity" class="required">Gender Identity</label>
+                <select id="genderIdentity" name="genderIdentity" required>
+                    <option value="" disabled selected>Select your gender identity</option>
+                    <option value="cisgender">Cisgender</option>
+                    <option value="transgender">Transgender</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="genderqueer">Genderqueer</option>
+                    <option value="other">Other</option>
+                </select>
+        
+                <label for="sexualOrientation" class="required">Sexual Orientation</label>
+                <select id="sexualOrientation" name="sexualOrientation" required>
+                    <option value="" disabled selected>Select your sexual orientation</option>
+                    <option value="heterosexual">Heterosexual</option>
+                    <option value="homosexual">Homosexual</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="asexual">Asexual</option>
+                    <option value="pansexual">Pansexual</option>
+                    <option value="other">Other</option>
+                </select>
+        
+                <label for="dobYear" class="required">Year of Birth</label>
+                <input type="text" id="dobYear" name="dobYear" required pattern="\d{4}" placeholder="YYYY">
+                <span class="note">Format: YYYY</span>
+        
+                <input type="submit" value="Register">
+            </form>
+        
+        </section>
+     </div>
+       </fieldset>
+</body>
+</html>

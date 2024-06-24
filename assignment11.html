@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/assignment11.css">
+<body>
+    <div class="container">
+        <header>
+            <h1>Login Form</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="login-container">
+<h2>Login</h2>
+<form class="login-form" method="post" action="pages/personalinfo.html" autocomplete="off">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Login">
+</form>
+</div>
+ </section>
+ </div>
+ <div class="registration-container">
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <fieldset>
+                <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Optional">
+    
+            
+            <label for="uniqueID" class="required">Unique Identifier</label>
+            <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+    
+            <label for="sex" class="required">Sex</label>
+            <select id="sex" name="sex" required>
+                <option value="" disabled selected>Select your sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="intersex">Intersex</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="genderIdentity" class="required">Gender Identity</label>
+            <select id="genderIdentity" name="genderIdentity" required>
+                <option value="" disabled selected>Select your gender identity</option>
+                <option value="cisgender">Cisgender</option>
+                <option value="transgender">Transgender</option>
+                <option value="nonbinary">Non-binary</option>
+                <option value="genderqueer">Genderqueer</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="sexualOrientation" class="required">Sexual Orientation</label>
+            <select id="sexualOrientation" name="sexualOrientation" required>
+                <option value="" disabled selected>Select your sexual orientation</option>
+                <option value="heterosexual">Heterosexual</option>
+                <option value="homosexual">Homosexual</option>
+                <option value="bisexual">Bisexual</option>
+                <option value="asexual">Asexual</option>
+                <option value="pansexual">Pansexual</option>
+                <option value="other">Other</option>
+            </select>
+    
+            <label for="dobYear" class="required">Year of Birth</label>
+            <input type="text" id="dobYear" name="dobYear" required pattern="\d{4}" placeholder="YYYY">
+            <span class="note">Format: YYYY</span>
+    
+            <input type="submit" value="Register">
+        </form>
+    
+    </section>
+ </div>
+   </fieldset>
+
+   
+   <header class="top-nav">
+    <div>Logged-in User</div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Logout</a>
+    </div>
+</header>
+
+
+<div class="container">
+
+
+    <nav class="side-nav">
+        <a href="#">Form 1: Personal Info</a>
+        <a href="#">Form 2: Medical History</a>
+        <a href="#">Form 3: Appointments</a>
+        <a href="#">Form 4: Insurance Details</a>
+        <a href="#">Form 5: Contact Information</a>
+    </nav>
+
+    <section class="main-content">
+        <div class="form-container">
+            <h2>Edit Personal Information</h2>
+            <form>
+                
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Optional">
+
+                
+                <label for="uniqueID" class="required">Unique Identifier</label>
+                <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+
+                
+                <label for="sex" class="required">Sex</label>
+                <select id="sex" name="sex" required>
+                    <option value="" disabled selected>Select your sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="intersex">Intersex</option>
+                    <option value="other">Other</option>
+                </select>
+
+                
+                <label for="genderIdentity" class="required">Gender Identity</label>
+                <select id="genderIdentity" name="genderIdentity" required>
+                    <option value="" disabled selected>Select your gender identity</option>
+                    <option value="cisgender">Cisgender</option>
+                    <option value="transgender">Transgender</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="genderqueer">Genderqueer</option>
+                    <option value="other">Other</option>
+                </select>
+
+                
+                <label for="sexualOrientation" class="required">Sexual Orientation</label>
+                <select id="sexualOrientation" name="sexualOrientation" required>
+                    <option value="" disabled selected>Select your sexual orientation</option>
+                    <option value="heterosexual">Heterosexual</option>
+                    <option value="homosexual">Homosexual</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="asexual">Asexual</option>
+                    <option value="pansexual">Pansexual</option>
+                    <option value="other">Other</option>
+                </select>
+
+                
+                <label for="dobYear" class="required">Year of Birth</label>
+                <input type="text" id="dobYear" name="dobYear" required pattern="\d{4}" placeholder="YYYY">
+                <span class="note">Format: YYYY</span>
+
+                
+                <input type="submit" value="Update Information">
+            </form>
+            </div>
+           </section>
+           </div>
+
+           <section>
+            <div id="form2" class="form-container" style="display: none;">
+                <h2>Risk Factor Information</h2>
+                <form>
+                    
+                    <label for="conditions" class="required">Medical Conditions</label>
+                    <textarea id="conditions" name="conditions" rows="4" required placeholder="List any medical conditions"></textarea>
+    
+                    
+                    <label for="lifestyle" class="required">Lifestyle Choices</label>
+                    <textarea id="lifestyle" name="lifestyle" rows="4" required placeholder="List lifestyle choices affecting health (e.g., smoking, diet)"></textarea>
+    
+                
+                    <label for="familyHistory" class="required">Family History</label>
+                    <textarea id="familyHistory" name="familyHistory" rows="4" required placeholder="List any family history of medical conditions"></textarea>
+    
+                    
+                    <label for="physicalActivity" class="required">Physical Activity</label>
+                    <input type="number" id="physicalActivity" name="physicalActivity" required placeholder="Hours per week">
+    
+                    
+                    <label for="alcohol" class="required">Alcohol Consumption</label>
+                    <input type="number" id="alcohol" name="alcohol" required placeholder="Drinks per week">
+    
+                    
+                    <input type="submit" value="Update Risk Factors">
+                </form>
+            </div>
+
+             
+             <div id="form3" class="form-container" style="display: none;">
+                <h2>Hepatitis B Pregnant Women Reporting Form</h2>
+                <form>
+                    
+                    <label for="uniqueID" class="required">Unique Identifier</label>
+                    <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+
+                    
+                    <label for="name" class="required">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter full name">
+
+                    
+                    <label for="dob" class="required">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    
+                    <label for="hepatitisStatus" class="required">Hepatitis B Status</label>
+                    <select id="hepatitisStatus" name="hepatitisStatus" required>
+                        <option value="" disabled selected>Select status</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+
+                    
+                    <label for="pregnancyStage" class="required">Pregnancy Stage</label>
+                    <select id="pregnancyStage" name="pregnancyStage" required>
+                        <option value="" disabled selected>Select stage</option>
+                        <option value="first-trimester">First Trimester</option>
+                        <option value="second-trimester">Second Trimester</option>
+                        <option value="third-trimester">Third Trimester</option>
+                    </select>
+
+                    
+                    <label for="contact" class="required">Contact Information</label>
+                    <textarea id="contact" name="contact" rows="4" required placeholder="Enter contact information"></textarea>
+
+                    
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Enter any additional information"></textarea>
+
+                    
+                    <input type="submit" value="Report Hepatitis B Case">
+                </form>
+            </div>
+
+            
+            <div id="form4" class="form-container">
+                <h2>Congenital Syphilis Reporting Form</h2>
+                <form>
+                    
+                    <label for="uniqueID" class="required">Unique Identifier</label>
+                    <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+
+                    
+                    <label for="infantName" class="required">Infant's Full Name</label>
+                    <input type="text" id="infantName" name="infantName" required placeholder="Enter infant's full name">
+
+                
+                    <label for="infantDOB" class="required">Infant's Date of Birth</label>
+                    <input type="date" id="infantDOB" name="infantDOB" required>
+
+                    
+                    <label for="motherName" class="required">Mother's Full Name</label>
+                    <input type="text" id="motherName" name="motherName" required placeholder="Enter mother's full name">
+
+                    
+                    <label for="motherDOB" class="required">Mother's Date of Birth</label>
+                    <input type="date" id="motherDOB" name="motherDOB" required>
+
+                    
+                    <label for="diagnosisDate" class="required">Diagnosis Date</label>
+                    <input type="date" id="diagnosisDate" name="diagnosisDate" required>
+
+                    
+                    <label for="testType" class="required">Syphilis Test Type</label>
+                    <select id="testType" name="testType" required>
+                        <option value="" disabled selected>Select test type</option>
+                        <option value="RPR">RPR (Rapid Plasma Reagin)</option>
+                        <option value="VDRL">VDRL (Venereal Disease Research Laboratory)</option>
+                        <option value="FTA-ABS">FTA-ABS (Fluorescent Treponemal Antibody Absorption)</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    
+                    <label for="treatment" class="required">Treatment Details</label>
+                    <textarea id="treatment" name="treatment" rows="4" required placeholder="Enter treatment details"></textarea>
+
+                    
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Enter any additional information"></textarea>
+
+                    
+                    <input type="submit" value="Report Syphilis Case">
+                </form>
+            </div>
+
+            
+            <div id="form5" class="form-container" style="display: none;">
+                <h2>Insurance Details</h2>
+                <form method="POST">
+                    
+                </form>
+            </div>
+
+             
+             <div id="form5" class="form-container">
+                <h2>Chlamydia & Gonorrhea Case Reporting Form</h2>
+                <form>
+                
+                    <label for="uniqueID" class="required">Unique Identifier</label>
+                    <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+
+                    
+                    <label for="patientName" class="required">Patient's Full Name</label>
+                    <input type="text" id="patientName" name="patientName" required placeholder="Enter patient's full name">
+
+                    
+                    <label for="dob" class="required">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                
+                    <label for="gender" class="required">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="non-binary">Non-Binary</option>
+                        <option value="other">Other</option>
+                        <option value="prefer_not_to_say">Prefer not to say</option>
+                    </select>
+
+                    
+                    <label for="diagnosisDate" class="required">Diagnosis Date</label>
+                    <input type="date" id="diagnosisDate" name="diagnosisDate" required>
+
+                    
+                    <label for="testType" class="required">Test Type</label>
+                    <select id="testType" name="testType" required>
+                        <option value="" disabled selected>Select test type</option>
+                        <option value="NAAT">NAAT (Nucleic Acid Amplification Test)</option>
+                        <option value="culture">Culture</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    
+                    <label for="testResult" class="required">Test Result</label>
+                    <select id="testResult" name="testResult" required>
+                        <option value="" disabled selected>Select test result</option>
+                        <option value="positive">Positive</option>
+                        <option value="negative">Negative</option>
+                    </select>
+
+                    
+                    <label for="treatment" class="required">Treatment Details</label>
+                    <textarea id="treatment" name="treatment" rows="4" required placeholder="Enter treatment details"></textarea>
+
+                    
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Enter any additional information"></textarea>
+
+                    
+                    <input type="submit" value="Report Case">
+                </form>
+            </div>
+         </section>
+       </body>
+      </html>

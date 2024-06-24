@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="form2" class="form-container" style="display: none;">
+            <h2>Risk Factor Information</h2>
+            <form>
+                
+                <label for="conditions" class="required">Medical Conditions</label>
+                <textarea id="conditions" name="conditions" rows="4" required placeholder="List any medical conditions"></textarea>
+
+                
+                <label for="lifestyle" class="required">Lifestyle Choices</label>
+                <textarea id="lifestyle" name="lifestyle" rows="4" required placeholder="List lifestyle choices affecting health (e.g., smoking, diet)"></textarea>
+
+            
+                <label for="familyHistory" class="required">Family History</label>
+                <textarea id="familyHistory" name="familyHistory" rows="4" required placeholder="List any family history of medical conditions"></textarea>
+
+                
+                <label for="physicalActivity" class="required">Physical Activity</label>
+                <input type="number" id="physicalActivity" name="physicalActivity" required placeholder="Hours per week">
+
+                
+                <label for="alcohol" class="required">Alcohol Consumption</label>
+                <input type="number" id="alcohol" name="alcohol" required placeholder="Drinks per week">
+
+                
+                <input type="submit" value="Update Risk Factors">
+            </form>
+        </div>
+</body>
+</html>

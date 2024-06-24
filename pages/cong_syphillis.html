@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="form4" class="form-container">
+        <h2>Congenital Syphilis Reporting Form</h2>
+        <form>
+            
+            <label for="uniqueID" class="required">Unique Identifier</label>
+            <input type="text" id="uniqueID" name="uniqueID" required placeholder="Enter unique identifier">
+
+            
+            <label for="infantName" class="required">Infant's Full Name</label>
+            <input type="text" id="infantName" name="infantName" required placeholder="Enter infant's full name">
+
+        
+            <label for="infantDOB" class="required">Infant's Date of Birth</label>
+            <input type="date" id="infantDOB" name="infantDOB" required>
+
+            
+            <label for="motherName" class="required">Mother's Full Name</label>
+            <input type="text" id="motherName" name="motherName" required placeholder="Enter mother's full name">
+
+            
+            <label for="motherDOB" class="required">Mother's Date of Birth</label>
+            <input type="date" id="motherDOB" name="motherDOB" required>
+
+            
+            <label for="diagnosisDate" class="required">Diagnosis Date</label>
+            <input type="date" id="diagnosisDate" name="diagnosisDate" required>
+
+            
+            <label for="testType" class="required">Syphilis Test Type</label>
+            <select id="testType" name="testType" required>
+                <option value="" disabled selected>Select test type</option>
+                <option value="RPR">RPR (Rapid Plasma Reagin)</option>
+                <option value="VDRL">VDRL (Venereal Disease Research Laboratory)</option>
+                <option value="FTA-ABS">FTA-ABS (Fluorescent Treponemal Antibody Absorption)</option>
+                <option value="other">Other</option>
+            </select>
+
+            
+            <label for="treatment" class="required">Treatment Details</label>
+            <textarea id="treatment" name="treatment" rows="4" required placeholder="Enter treatment details"></textarea>
+
+            
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Enter any additional information"></textarea>
+
+            
+            <input type="submit" value="Report Syphilis Case">
+        </form>
+    </div>
+</body>
+</html>
